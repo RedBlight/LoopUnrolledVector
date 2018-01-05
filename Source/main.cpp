@@ -12,12 +12,16 @@ using namespace complex_literals;
 
 int main()
 {
-	LuVector3d A( 1.1, 2.2, 3.3 );
+	LuVector<3,double> A( 1.1, 2.2, 3.3 );
 
-	LuVector3d B( 1.1, 2.2, 3.3 );
+	LuVector<3,double> B( 1, 10, 100 );
 
-	B += A;
+	//B += A;
+	
+	//B += A + A;
 
+	//B += B + 5;
+	B = 5 + B;
 
 	cout << B << endl;
 

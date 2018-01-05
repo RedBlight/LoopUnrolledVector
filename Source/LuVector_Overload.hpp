@@ -91,56 +91,64 @@ namespace LUV
 	template< size_t N, class T, class S >
 	inline LuVector< N, T > operator +( const LuVector< N, T >& lhs, const S& rhs )
 	{
-		return LuVector< N, T >( lhs ) += rhs;
+		LuVector< N, T > result( lhs );
+		return result += rhs;
 	}
 
 	// SCALAR + VECTOR
 	template< size_t N, class T, class S >
 	inline LuVector< N, T > operator +( const T& lhs, const LuVector< N, S >& rhs )
 	{
-		return LuVector< N, T >( lhs ) += rhs;
+		LuVector< N, T > result( lhs );
+		return result += rhs;
 	}
 
 	// VECTOR - SCALAR
 	template< size_t N, class T, class S >
 	inline LuVector< N, T > operator -( const LuVector< N, T >& lhs, const S& rhs )
 	{
-		return LuVector< N, T >( lhs ) -= rhs;
+		LuVector< N, T > result( lhs );
+		return result -= rhs;
 	}
 
 	// SCALAR - VECTOR
 	template< size_t N, class T, class S >
 	inline LuVector< N, T > operator -( const T& lhs, const LuVector< N, S >& rhs )
 	{
-		return LuVector< N, T >( lhs ) -= rhs;
+		LuVector< N, T > result( lhs );
+		return result -= rhs;
 	}
 
 	// VECTOR * SCALAR
 	template< size_t N, class T, class S >
 	inline LuVector< N, T > operator *( const LuVector< N, T >& lhs, const S& rhs )
 	{
-		return LuVector< N, T >( lhs ) *= rhs;
+		LuVector< N, T > result( lhs );
+		return result *= rhs;
 	}
 
 	// SCALAR * VECTOR
 	template< size_t N, class T, class S >
 	inline LuVector< N, T > operator *( const T& lhs, const LuVector< N, S >& rhs )
 	{
-		return LuVector< N, T >( lhs ) *= rhs;
+		LuVector< N, T > result( lhs );
+		return result *= rhs;
 	}
 
 	// VECTOR / SCALAR
 	template< size_t N, class T, class S >
 	inline LuVector< N, T > operator /( const LuVector< N, T >& lhs, const S& rhs )
 	{
-		return LuVector< N, T >( lhs ) /= rhs;
+		LuVector< N, T > result( lhs );
+		return result /= rhs;
 	}
 
 	// SCALAR / VECTOR
 	template< size_t N, class T, class S >
 	inline LuVector< N, T > operator /( const T& lhs, const LuVector< N, S >& rhs )
 	{
-		return LuVector< N, T >( lhs ) /= rhs;
+		LuVector< N, T > result( lhs );
+		return result /= rhs;
 	}
 
 	//////////////////////////////////////////////////////////////
@@ -149,28 +157,32 @@ namespace LUV
 	template< size_t N, class T, class S >
 	inline LuVector< N, T > operator +( const LuVector< N, T >& lhs, const LuVector< N, S >& rhs )
 	{
-		return LuVector< N, T >( lhs ) += rhs;
+		LuVector< N, T > result( lhs );
+		return result += rhs;
 	}
 
 	// VECTOR - VECTOR
 	template< size_t N, class T, class S >
 	inline LuVector< N, T > operator -( const LuVector< N, T >& lhs, const LuVector< N, S >& rhs )
 	{
-		return LuVector< N, T >( lhs ) -= rhs;
+		LuVector< N, T > result( lhs );
+		return result -= rhs;
 	}
 
 	// VECTOR * VECTOR
 	template< size_t N, class T, class S >
 	inline LuVector< N, T > operator *( const LuVector< N, T >& lhs, const LuVector< N, S >& rhs )
 	{
-		return LuVector< N, T >( lhs ) *= rhs;
+		LuVector< N, T > result( lhs );
+		return result *= rhs;
 	}
 
 	// VECTOR / VECTOR
 	template< size_t N, class T, class S >
 	inline LuVector< N, T > operator /( const LuVector< N, T >& lhs, const LuVector< N, S >& rhs )
 	{
-		return LuVector< N, T >( lhs ) /= rhs;
+		LuVector< N, T > result( lhs );
+		return result /= rhs;
 	}
 
 	//////////////////////////////////////////////////////////////
