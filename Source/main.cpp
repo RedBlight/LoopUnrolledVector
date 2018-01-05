@@ -79,7 +79,7 @@ int main()
 	// PERFORMANCE TEST
 	//////////////////////////////////////
 
-	cout << "Summing 100 million vectors:" << endl;
+	cout << "Summing 100 million vectors..." << endl;
 	cout << endl;
 
 	default_random_engine generator;
@@ -121,7 +121,7 @@ int main()
 	}
 	diff = clock() - start;
 	
-	cout << oldArrTotal[0] << "," << oldArrTotal[1] << "," << oldArrTotal[2] << endl;
+	cout << "(" << oldArrTotal[0] << "," << oldArrTotal[1] << "," << oldArrTotal[2] << ")" << endl;
 	cout << "Array: " << diff << " msec" << endl;
 	cout << endl;
 
@@ -142,7 +142,7 @@ int main()
 	}
 	diff = clock() - start;
 	
-	cout << oldArrTotal[0] << "," << oldArrTotal[1] << "," << oldArrTotal[2] << endl;
+	cout << "(" << oldArrTotal[0] << "," << oldArrTotal[1] << "," << oldArrTotal[2] << ")" << endl;
 	cout << "Loop unrolled array: " << diff << " msec" << endl;
 	cout << endl;
 
