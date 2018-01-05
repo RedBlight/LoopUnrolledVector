@@ -1,2 +1,2 @@
 # LoopUnrolledVector
-N dimensional mathemtical vector template class for real and complex vectors.
+Mathematical vector class for N dimensional real and complex vectors. Loop operations are unrolled using templates.
