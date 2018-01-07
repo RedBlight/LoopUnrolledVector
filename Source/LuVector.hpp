@@ -33,33 +33,4 @@ namespace LUV
 #include "LuVector_Body.hpp"
 #include "LuVector_Overload.hpp"
 
-//namespace LUV
-//{
-//	using namespace std;
-//
-//	template< class T >
-//	using LuVector2 = LuVector< 2, T >;
-//
-//	template< class T >
-//	using LuVector3 = LuVector< 3, T >;
-//
-//	using LuVector2f = LuVector< 2, float >;
-//	using LuVector2d = LuVector< 2, double >;
-//	using LuVector2c = LuVector< 2, complex< double > >;
-//
-//	using LuVector3f = LuVector< 3, float >;
-//	using LuVector3d = LuVector< 3, double >;
-//	using LuVector3c = LuVector< 3, complex< double > >;
-//
-//};
-
-
-//#include "VecLoopUnroll.h"
-//#include "Vec.hpp"
-//#include "VecOperator.hpp"
-//#include "VecMath.hpp"
-//#include "VecGeometry.hpp"
-
-
-
 #endif
