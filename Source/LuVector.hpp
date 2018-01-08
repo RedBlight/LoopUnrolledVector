@@ -32,5 +32,7 @@ namespace LUV
 #include "LuVector_Unroll.hpp"
 #include "LuVector_Body.hpp"
 #include "LuVector_Overload.hpp"
+#include "LuVector_Math.hpp"
+#include "LuVector_Geometry.hpp"
 
 #endif

@@ -117,6 +117,8 @@
   <ItemGroup>
     <ClInclude Include="..\Source\LuVector.hpp" />
     <ClInclude Include="..\Source\LuVector_Body.hpp" />
+    <ClInclude Include="..\Source\LuVector_Geometry.hpp" />
+    <ClInclude Include="..\Source\LuVector_Math.hpp" />
     <ClInclude Include="..\Source\LuVector_Op.hpp" />
     <ClInclude Include="..\Source\LuVector_Overload.hpp" />
     <ClInclude Include="..\Source\LuVector_Unroll.hpp" />

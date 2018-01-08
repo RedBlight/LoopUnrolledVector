@@ -19,6 +19,8 @@ int main()
 	LuVector3d A( 10, 100, 1000 );
 	LuVector3d B( 3, 5, 7 );
 
+	cout << "Operator overlading tests:" << endl;
+
 	A = A + 1;
 	cout << A << endl;
 	A = A - 1;
@@ -74,6 +76,50 @@ int main()
 	cout << C << endl;
 
 	cout << endl;
+
+	// MATH TEST
+
+	cout << "A = " << A << endl;
+	cout << "B = " << B << endl;
+	cout << "C = " << C << endl;
+
+	cout << endl;
+	
+	cout << "Sum(A) = " << Sum( A ) << endl;
+	cout << "Abs(A) = " << Abs( A ) << endl;
+	cout << "Length(A) = " << Length( A ) << endl;
+	cout << "Unit(A) = " << Unit( A ) << endl;
+	cout << "Length(Unit(A)) = " << Length( Unit( A ) ) << endl;
+
+	cout << endl;
+	
+	cout << "Sum(C) = " << Sum( C ) << endl;
+	cout << "Abs(C) = " << Abs( C ) << endl;
+	cout << "Arg(C) = " << Arg( C ) << endl;
+	cout << "Length(C) = " << Length( C ) << endl;
+	cout << "Unit(C) = " << Unit( C ) << endl;
+
+	cout << endl;
+
+	cout << "Min(A,B) = " << Min( A, B ) << endl;
+	cout << "Max(A,B) = " << Max( A, B ) << endl;
+	cout << "Dot(A,B) = " << Dot( A, B ) << endl;
+	cout << "Cross(A,B) = " << Cross( A, B ) << endl;
+	cout << "Reflect((-1,-1,-1),(0,0,1)) = " << Reflect( LuVector3d( -1, -1, -1 ), LuVector3d( 0, 0, 1 ) ) << endl;
+
+	cout << endl;
+
+	cout << "CtsToSph(-1,0,0) = " << CtsToSph( LuVector3d( -1, 0, 0 ) ) << endl;
+	cout << "SphToCts(1,3.14,1.57) = " << SphToCts( LuVector3d( 1, 3.14159, 1.5708 ) ) << endl;
+	LuVector3d N, U, R;
+	OrthonormalSet( 0.0, 0.0, N, U, R );
+	cout << "OrthonormalSet3(0 phi,0 theta) = " << N << U << R << endl;
+	LuVector2d N2, R2;
+	OrthonormalSet( 0.0, N2, R2 );
+	cout << "OrthonormalSet2(0 theta) = " << N2 << R2 << endl;
+
+	//cout << "Max(A,B) = " << Max( A, B ) << endl;
+	//cout << "Dot(A,B) = " << Dot( A, B ) << endl;
 
 	//////////////////////////////////////
 	// PERFORMANCE TEST
@@ -161,7 +207,6 @@ int main()
 	cout << luvArrTotal << endl;
 	cout << "LuVector: " << diff << " msec" << endl;
 	cout << endl;
-
 
 	system( "pause" );
 	return 0;
